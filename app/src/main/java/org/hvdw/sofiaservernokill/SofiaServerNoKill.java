@@ -1,4 +1,4 @@
-package org.hvdw.nokillsofiaserver;
+package org.hvdw.sofiaservernokill;
 
 import android.util.Log;
 
@@ -8,8 +8,8 @@ import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
-public class NoKillSofiaServer implements IXposedHookLoadPackage {
-	public static final String TAG = "NoKillSofiaServer";
+public class SofiaServerNoKill implements IXposedHookLoadPackage {
+	public static final String TAG = "SofiaServerNoKill";
 	public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
 
 		if (!lpparam.packageName.equals("com.syu.ms")) return;

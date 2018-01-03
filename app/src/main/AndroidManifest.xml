@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-          package="org.hvdw.nokillsofiaserver"
+          package="org.hvdw.sofiaservernokill"
     >
 
     <application
@@ -16,7 +16,7 @@
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="This skips the SofiaServer kill all apps when going to sleep" />
+            android:value="This skips the SofiaServer function 'kill all apps' when going to sleep" />
         <meta-data
             android:name="xposedminversion"
             android:value="53" />
