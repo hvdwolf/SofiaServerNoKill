@@ -18,7 +18,8 @@ public class SofiaServerNoKill implements IXposedHookLoadPackage {
 			//@Override
 			protected void replaceHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
 				Log.d(TAG, "skipping method killAllAppButSome");
-				param.setResult(null);
+				//param.setResult(null);
+				return;
 			}
 		});
 	}
