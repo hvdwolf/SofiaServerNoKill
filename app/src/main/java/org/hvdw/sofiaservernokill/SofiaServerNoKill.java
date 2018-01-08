@@ -15,11 +15,11 @@ public class SofiaServerNoKill implements IXposedHookLoadPackage {
 		if (!lpparam.packageName.equals("com.syu.ms")) return;
 
 		findAndHookMethod("com.syu.ms.app.ToolkitApp", lpparam.classLoader, "killAllAppButSome", new XC_MethodHook() {
-			//@Override
-			protected void replaceHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
+			@Override
+			protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
 				Log.d(TAG, "skipping method killAllAppButSome");
-				//param.setResult(null);
-				return;
+				param.setResult(null);
+				//return;
 			}
 		});
 	}
