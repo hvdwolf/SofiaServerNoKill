@@ -28,6 +28,10 @@
             </intent-filter>
         </activity>
 
+	<provider
+		android:name=".MyPreferenceProvider"
+		android:authorities="org.hvdw.sofiaservernokill.preferences"
+		android:exported="true"/>
     </application>
 
 </manifest>
